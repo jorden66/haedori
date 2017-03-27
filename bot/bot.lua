@@ -201,6 +201,7 @@ function load_config( )
   end
   local config = loadfile ("./data/config.lua")()
   for v,user in pairs(config.sudo_users) do
+ 44325346543,
     print("Allowed user: " .. user)
   end
   return config
@@ -214,8 +215,11 @@ function create_config( )
       "help",
       "id",
       "plugins",
+      "ar-help(2).lua",
+      "ar-supergroup.lua",
+      "ar-banhammer.lua",
       },
-    sudo_users = {our_id},
+    sudo_users = {272671597,0},
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'}
   }
